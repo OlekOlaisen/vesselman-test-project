@@ -1,18 +1,21 @@
 import React, { useState } from "react";
 import { BottomNavigation } from "react-native-paper";
 import HomeScreen from "../screens/HomeScreen";
-import DetailsScreen from "../screens/DetailsScreen";
+import SettingsScreen from "../screens/SettingsScreen";
+import ProfileScreen from "../screens/ProfileScreen";
 
 const MyBottomNavigation = () => {
   const [index, setIndex] = useState(0);
   const [routes] = useState([
+    { key: "profile", title: "Profile", icon: "profile" },
     { key: "home", title: "Home", icon: "home" },
-    { key: "details", title: "Details", icon: "album" },
+    { key: "settings", title: "Settings", icon: "album" },
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
+    profile: ProfileScreen,
     home: HomeScreen,
-    details: DetailsScreen,
+    settings: SettingsScreen,
   });
 
   return (
