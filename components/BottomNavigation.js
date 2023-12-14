@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { BottomNavigation, useTheme } from "react-native-paper";
+import {
+  BottomNavigation,
+  useTheme,
+  Icon,
+  MD3Colors,
+} from "react-native-paper";
 import HomeScreen from "../screens/HomeScreen";
 import SettingsScreen from "../screens/SettingsScreen";
 import ProfileScreen from "../screens/ProfileScreen";
@@ -7,9 +12,9 @@ import ProfileScreen from "../screens/ProfileScreen";
 const MyBottomNavigation = () => {
   const [index, setIndex] = useState(0);
   const [routes] = useState([
-    { key: "profile", title: "Profile", icon: "profile" },
+    { key: "profile", title: "Profile", icon: "account" },
     { key: "home", title: "Home", icon: "home" },
-    { key: "settings", title: "Settings", icon: "album" },
+    { key: "settings", title: "Settings", icon: "settings" },
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
