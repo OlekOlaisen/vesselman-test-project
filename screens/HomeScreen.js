@@ -16,7 +16,7 @@ function HomeScreen() {
         backgroundColor: colors.background,
       }}
     >
-      <Text style={{ color: colors.text }}>Home Screen</Text>
+      <Text style={{ color: colors.text }}>Home</Text>
       
       
     </View>

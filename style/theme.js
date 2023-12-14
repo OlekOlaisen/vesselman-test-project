@@ -5,14 +5,14 @@ const lightTheme = {
   colors: {
     ...MD3LightTheme.colors,
     text: "#444444", // Assuming natural dark color for text
-    primary: "#006363", // Primary color from your palette
+    primary: "#015052", // Primary color from your palette
     onPrimary: "#ffffff", // White text on primary color for readability
-    primaryContainer: "#007575", // A slightly different shade for the container
+    primaryContainer: "#BFDFDF", // A slightly different shade for the container
     onPrimaryContainer: "#ffffff", // White text on primary container
     secondary: "#00a3a3", // Secondary color from your palette
     onSecondary: "#ffffff", // White text on secondary color
-    secondaryContainer: "#4f7575", // A muted shade for secondary container
-    onSecondaryContainer: "#ffffff", // White text on secondary container
+    secondaryContainer: "#9dc7c7", // A muted shade for secondary container
+    onSecondaryContainer: "#9dc7c7", // White text on secondary container
     tertiary: "#2f3a1d", // A tertiary color derived from your semantic colors
     onTertiary: "#ffffff", // White text on tertiary color
     tertiaryContainer: "#5a6f3d", // A muted tertiary container color
@@ -22,7 +22,7 @@ const lightTheme = {
     errorContainer: "#fcdedc", // A light shade of the error color
     onErrorContainer: "#b00020", // Error color text on error container
     background: "#f1f2f4", // Background color from your palette
-    onBackground: "#444444", // Natural dark color for text on background
+    onBackground: "#BFDFDF", // Natural dark color for text on background
     surface: "#ffffff", // Foreground color from your palette
     onSurface: "#444444", // Natural dark color for text on surface
     surfaceVariant: "#e6e6e6", // A lighter shade for surface variant
@@ -66,7 +66,7 @@ const darkTheme = {
     errorContainer: "#B3261E", // A darker shade for error container
     onErrorContainer: "#FADAD7", // A lighter shade for text on the error container
     background: "#273142", // A typical dark theme background color
-    onBackground: "#E5E5E5", // Light text on background
+    onBackground: "#374153", 
     surface: "#121212", // Same as the background for cohesiveness
     onSurface: "#E5E5E5", // Light text on surface
     surfaceVariant: "#2c2c2c", // A slight variation for the surface variant
