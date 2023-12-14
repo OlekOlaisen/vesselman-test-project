@@ -21,8 +21,8 @@ function HomeScreen() {
         {isDarkTheme ? "Dark Theme" : "Light Theme"}
       </Text>
       <Switch
-        trackColor={{ false: "#767577", true: "#81b0ff" }}
-        thumbColor={isDarkTheme ? "#f5dd4b" : "#f4f3f4"}
+        trackColor={{ false: colors.surface, true: colors.surface }}
+        thumbColor={isDarkTheme ? colors.primary : colors.primary}
         ios_backgroundColor="#3e3e3e"
         onValueChange={() => setIsDarkTheme(!isDarkTheme)}
         value={isDarkTheme}
