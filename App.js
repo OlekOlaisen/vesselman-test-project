@@ -1,20 +1,37 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from "react";
+import { PaperProvider } from "react-native-paper";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import HomeScreen from "./screens/HomeScreen";
+import DetailsScreen from "./screens/DetailsScreen";
+import { lightTheme, darkTheme } from "./style/theme";
+import { ThemeContext } from "./context/themeContext";
 
-export default function App() {
+const Stack = createNativeStackNavigator();
+
+function App() {
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const theme = isDarkTheme ? darkTheme : lightTheme;
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <PaperProvider theme={theme}>
+      <ThemeContext.Provider value={{ isDarkTheme, setIsDarkTheme }}>
+        <NavigationContainer>
+          <Stack.Navigator initialRouteName="Home">
+            <Stack.Screen name="Home">
+              {() => (
+                <HomeScreen
+                  setIsDarkTheme={setIsDarkTheme}
+                  isDarkTheme={isDarkTheme}
+                />
+              )}
+            </Stack.Screen>
+            <Stack.Screen name="Details" component={DetailsScreen} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </ThemeContext.Provider>
+    </PaperProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
