@@ -20,7 +20,10 @@ function SettingsScreen() {
         {isDarkTheme ? "Dark Theme" : "Light Theme"}
       </Text>
       <Switch
-        trackColor={{ false: colors.surface, true: colors.surface }}
+        trackColor={{
+          false: colors.primaryContainer,
+          true: colors.primaryContainer,
+        }}
         thumbColor={isDarkTheme ? colors.primary : colors.primary}
         ios_backgroundColor="#3e3e3e"
         onValueChange={() => setIsDarkTheme(!isDarkTheme)}
