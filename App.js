@@ -3,7 +3,6 @@ import { PaperProvider } from "react-native-paper";
 import { NavigationContainer } from "@react-navigation/native";
 import { lightTheme, darkTheme } from "./style/theme";
 import { ThemeContext } from "./context/themeContext";
-import MyBottomNavigation from  "./components/BottomNavigation";
 import NavigationTabs from "./components/NavigationTabs";
 
 function App() {
