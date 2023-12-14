@@ -17,8 +17,6 @@ function HomeScreen() {
       }}
     >
       <Text style={{ color: colors.text }}>Home</Text>
-      
-      
     </View>
   );
 }

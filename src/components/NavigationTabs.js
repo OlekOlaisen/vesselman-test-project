@@ -11,9 +11,8 @@ import ProfileScreen from "../screens/ProfileScreen";
 const Tab = createBottomTabNavigator();
 
 export default function NavigationTabs() {
-
-const { colors } = useTheme();
-const theme = useTheme();
+  const { colors } = useTheme();
+  const theme = useTheme();
 
   const styles = StyleSheet.create({
     container: {
@@ -30,8 +29,6 @@ const theme = useTheme();
     },
   });
 
-  
-  
   return (
     <Tab.Navigator
       screenOptions={{
@@ -104,7 +101,3 @@ const theme = useTheme();
     </Tab.Navigator>
   );
 }
-
-
-
-

@@ -28,7 +28,6 @@ function SettingsScreen() {
     },
   });
 
-
   return (
     <View
       style={{
@@ -39,8 +38,6 @@ function SettingsScreen() {
         backgroundColor: colors.background,
       }}
     >
-
-
       <View style={styles.buttonContainer}>
         <Text style={{ color: colors.text }}>
           {isDarkTheme ? "Dark Theme" : "Light Theme"}
@@ -56,8 +53,6 @@ function SettingsScreen() {
           value={isDarkTheme}
         />
       </View>
-
-
     </View>
   );
 }

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { PaperProvider } from "react-native-paper";
 import { NavigationContainer } from "@react-navigation/native";
-import { lightTheme, darkTheme } from "./style/theme";
-import { ThemeContext } from "./context/themeContext";
-import NavigationTabs from "./components/NavigationTabs";
+import { lightTheme, darkTheme } from "./src/style/theme";
+import { ThemeContext } from "./src/context/themeContext";
+import NavigationTabs from "./src/components/NavigationTabs";
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -13,7 +13,7 @@ function App() {
     <PaperProvider theme={theme}>
       <ThemeContext.Provider value={{ isDarkTheme, setIsDarkTheme }}>
         <NavigationContainer>
-          <NavigationTabs/>
+          <NavigationTabs />
         </NavigationContainer>
       </ThemeContext.Provider>
     </PaperProvider>
