@@ -20,23 +20,25 @@ const theme = useTheme();
       flex: 1,
       justifyContent: "center",
       alignItems: "center",
-      backgroundColor: colors.background,
+      backgroundColor: colors.lightBackground,
+    },
+    icon: {
+      color: colors.primary,
     },
     bar: {
       backgroundColor: colors.background,
     },
-    icon: {
-      color: colors.primary
-     
-    },
-
   });
 
   
   
   return (
     <Tab.Navigator
-      screenOptions={{ headerShown: true }}
+      screenOptions={{
+        headerShown: true,
+        headerStyle: { backgroundColor: colors.background },
+        headerTintColor: colors.primary,
+      }}
       style={styles.container}
       tabBar={({ navigation, state, descriptors, insets }) => (
         <BottomNavigation.Bar
@@ -73,6 +75,7 @@ const theme = useTheme();
       <Tab.Screen
         name="Profile"
         component={ProfileScreen}
+        
         options={{
           tabBarLabel: "Profile",
           tabBarIcon: ({ color, size }) => (
@@ -83,6 +86,7 @@ const theme = useTheme();
       <Tab.Screen
         name="Home"
         component={HomeScreen}
+        
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({ color, size }) => (
@@ -93,6 +97,7 @@ const theme = useTheme();
       <Tab.Screen
         name="Settings"
         component={SettingsScreen}
+        
         options={{
           tabBarLabel: "Settings",
           tabBarIcon: ({ color, size }) => (

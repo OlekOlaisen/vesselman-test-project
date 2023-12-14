@@ -4,43 +4,39 @@ const lightTheme = {
   ...MD3LightTheme,
   colors: {
     ...MD3LightTheme.colors,
-    text: "rgb(29, 27, 30)",
-    primary: "rgb(120, 69, 172)",
-    onPrimary: "rgb(255, 255, 255)",
-    primaryContainer: "rgb(240, 219, 255)",
-    onPrimaryContainer: "rgb(44, 0, 81)",
-    secondary: "rgb(102, 90, 111)",
-    onSecondary: "rgb(255, 255, 255)",
-    secondaryContainer: "rgb(237, 221, 246)",
-    onSecondaryContainer: "rgb(33, 24, 42)",
-    tertiary: "rgb(128, 81, 88)",
-    onTertiary: "rgb(255, 255, 255)",
-    tertiaryContainer: "rgb(255, 217, 221)",
-    onTertiaryContainer: "rgb(50, 16, 23)",
-    error: "rgb(186, 26, 26)",
-    onError: "rgb(255, 255, 255)",
-    errorContainer: "rgb(255, 218, 214)",
-    onErrorContainer: "rgb(65, 0, 2)",
-    background: "rgb(255, 251, 255)",
-    onBackground: "rgb(29, 27, 30)",
-    surface: "rgb(255, 251, 255)",
-    onSurface: "rgb(29, 27, 30)",
-    surfaceVariant: "rgb(233, 223, 235)",
-    onSurfaceVariant: "rgb(74, 69, 78)",
-    outline: "rgb(124, 117, 126)",
-    outlineVariant: "rgb(204, 196, 206)",
-    shadow: "rgb(0, 0, 0)",
-    scrim: "rgb(0, 0, 0)",
-    inverseSurface: "rgb(50, 47, 51)",
-    inverseOnSurface: "rgb(245, 239, 244)",
-    inversePrimary: "rgb(220, 184, 255)",
+    text: "#444444", // Assuming natural dark color for text
+    primary: "#006363", // Primary color from your palette
+    onPrimary: "#ffffff", // White text on primary color for readability
+    primaryContainer: "#007575", // A slightly different shade for the container
+    onPrimaryContainer: "#ffffff", // White text on primary container
+    secondary: "#00a3a3", // Secondary color from your palette
+    onSecondary: "#ffffff", // White text on secondary color
+    secondaryContainer: "#4f7575", // A muted shade for secondary container
+    onSecondaryContainer: "#ffffff", // White text on secondary container
+    tertiary: "#2f3a1d", // A tertiary color derived from your semantic colors
+    onTertiary: "#ffffff", // White text on tertiary color
+    tertiaryContainer: "#5a6f3d", // A muted tertiary container color
+    onTertiaryContainer: "#ffffff", // White text on tertiary container
+    error: "#b00020", // Standard Material error color
+    onError: "#ffffff", // White text on error color
+    errorContainer: "#fcdedc", // A light shade of the error color
+    onErrorContainer: "#b00020", // Error color text on error container
+    background: "#f1f2f4", // Background color from your palette
+    onBackground: "#444444", // Natural dark color for text on background
+    surface: "#ffffff", // Foreground color from your palette
+    onSurface: "#444444", // Natural dark color for text on surface
+    surfaceVariant: "#e6e6e6", // A lighter shade for surface variant
+    onSurfaceVariant: "#444444", // Natural dark color for text on surface variant
+    outline: "#6f6f6f", // A muted color for outlines
+    // ... other colors and properties
     elevation: {
       level0: "transparent",
-      level1: "rgb(248, 242, 251)",
-      level2: "rgb(244, 236, 248)",
-      level3: "rgb(240, 231, 246)",
-      level4: "rgb(239, 229, 245)",
-      level5: "rgb(236, 226, 243)",
+      level1: "#f5f5f5", // Elevation for level 1
+      level2: "#e0e0e0", // Elevation for level 2
+      level3: "#cccccc", // Elevation for level 3
+
+      level4: "#bdbdbd", // Elevation for level 4, slightly darker
+      level5: "#acacac", // Elevation for level 5, even darker
     },
     surfaceDisabled: "rgba(29, 27, 30, 0.12)",
     onSurfaceDisabled: "rgba(29, 27, 30, 0.38)",
@@ -52,47 +48,41 @@ const darkTheme = {
   ...MD3DarkTheme,
   colors: {
     ...MD3DarkTheme.colors,
-    text: "rgb(231, 225, 229)",
-    primary: "rgb(220, 184, 255)",
-    onPrimary: "rgb(71, 12, 122)",
-    primaryContainer: "rgb(95, 43, 146)",
-    onPrimaryContainer: "rgb(240, 219, 255)",
-    secondary: "rgb(208, 193, 218)",
-    onSecondary: "rgb(54, 44, 63)",
-    secondaryContainer: "rgb(77, 67, 87)",
-    onSecondaryContainer: "rgb(237, 221, 246)",
-    tertiary: "rgb(243, 183, 190)",
-    onTertiary: "rgb(75, 37, 43)",
-    tertiaryContainer: "rgb(101, 58, 65)",
-    onTertiaryContainer: "rgb(255, 217, 221)",
-    error: "rgb(255, 180, 171)",
-    onError: "rgb(105, 0, 5)",
-    errorContainer: "rgb(147, 0, 10)",
-    onErrorContainer: "rgb(255, 180, 171)",
-    background: "rgb(29, 27, 30)",
-    onBackground: "rgb(231, 225, 229)",
-    surface: "rgb(29, 27, 30)",
-    onSurface: "rgb(231, 225, 229)",
-    surfaceVariant: "rgb(74, 69, 78)",
-    onSurfaceVariant: "rgb(204, 196, 206)",
-    outline: "rgb(150, 142, 152)",
-    outlineVariant: "rgb(74, 69, 78)",
-    shadow: "rgb(0, 0, 0)",
-    scrim: "rgb(0, 0, 0)",
-    inverseSurface: "rgb(231, 225, 229)",
-    inverseOnSurface: "rgb(50, 47, 51)",
-    inversePrimary: "rgb(120, 69, 172)",
+    text: "#E5E5E5", // A light color for text that contrasts with the dark background
+    primary: "#DB932C", // Your chosen primary color
+    onPrimary: "#2B2117", // A dark shade for text/icons on the primary color for readability
+    primaryContainer: "#4D3C2F", // A darker shade of the primary color for containers
+    onPrimaryContainer: "#FFDBB0", // A lighter shade of the primary color for text/icons on primary containers
+    secondary: "#8A7E72", // A neutral secondary color that complements the primary
+    onSecondary: "#E5E5E5", // Light text on secondary color
+    secondaryContainer: "#655D53", // A darker shade for the secondary container
+    onSecondaryContainer: "#DFD3C3", // A lighter shade for text/icons on secondary container
+    tertiary: "#6D5F57", // A tertiary color that's a warm, muted brown
+    onTertiary: "#E5E5E5", // Light text on tertiary color
+    tertiaryContainer: "#4A4139", // A darker shade for the tertiary container
+    onTertiaryContainer: "#D1C4B8", // A lighter shade for text/icons on the tertiary container
+    error: "#CF6679", // A standard Material Design error color for dark themes
+    onError: "#1E1214", // Dark text on error color for readability
+    errorContainer: "#B3261E", // A darker shade for error container
+    onErrorContainer: "#FADAD7", // A lighter shade for text on the error container
+    background: "#273142", // A typical dark theme background color
+    onBackground: "#E5E5E5", // Light text on background
+    surface: "#121212", // Same as the background for cohesiveness
+    onSurface: "#E5E5E5", // Light text on surface
+    surfaceVariant: "#2c2c2c", // A slight variation for the surface variant
+    onSurfaceVariant: "#E5E5E5", // Light text on the surface variant
+    outline: "#93876C", // A muted color for outlines, derived from the primary color
     elevation: {
       level0: "transparent",
-      level1: "rgb(39, 35, 41)",
-      level2: "rgb(44, 40, 48)",
-      level3: "rgb(50, 44, 55)",
-      level4: "rgb(52, 46, 57)",
-      level5: "rgb(56, 49, 62)",
+      level1: "#1d1d1d",
+      level2: "#222222",
+      level3: "#272727",
+      level4: "#2d2d2d",
+      level5: "#323232",
     },
-    surfaceDisabled: "rgba(231, 225, 229, 0.12)",
-    onSurfaceDisabled: "rgba(231, 225, 229, 0.38)",
-    backdrop: "rgba(51, 47, 55, 0.4)",
+    surfaceDisabled: "rgba(219, 147, 44, 0.12)", // Using the primary color with reduced opacity
+    onSurfaceDisabled: "rgba(219, 147, 44, 0.38)", // Using the primary color with higher opacity for text/icons
+    backdrop: "rgba(28, 27, 31, 0.8)",
   },
 };
 
