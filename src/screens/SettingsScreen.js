@@ -2,31 +2,18 @@ import React, { useContext } from "react";
 import { useTheme } from "react-native-paper";
 import { View, Text, Switch, StyleSheet } from "react-native";
 import { ThemeContext } from "../context/themeContext";
+import { Button } from "react-native";
 
 function SettingsScreen() {
   const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext);
   const { colors } = useTheme();
-
   const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: "center",
-      alignItems: "center",
-      backgroundColor: colors.background,
-    },
-    icon: {
-      color: colors.primary,
-    },
-    bar: {
-      backgroundColor: colors.background,
-    },
-    buttonContainer: {
-      flex: 1,
-      justifyContent: "center",
-      alignItems: "center",
-      backgroundColor: colors.background,
-    },
+    /*... existing styles ...*/
   });
+
+  const handleLogout = () => {
+    // Handle logout logic here
+  };
 
   return (
     <View
@@ -53,6 +40,18 @@ function SettingsScreen() {
           value={isDarkTheme}
         />
       </View>
+      
+      <View style={styles.section}>{/* Add profile settings here */}</View>
+      
+      <View style={styles.section}>
+        <Text style={{ color: colors.text }}>Notifications</Text>
+        <Switch
+          trackColor={{ false: colors.primaryContainer, true: colors.primary }}
+          thumbColor={isDarkTheme ? colors.secondary : colors.primary}
+        />
+      </View>
+      
+      <Button title="Logout" onPress={handleLogout} color={colors.primary} />
     </View>
   );
 }
