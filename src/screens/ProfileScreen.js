@@ -7,7 +7,7 @@ import ProfileIcon from "../assets/profileIcon.svg";
 
 function ProfileScreen() {
   const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext);
-  const { colors } = useTheme();
+  const { colors, fonts } = useTheme();
 
   const styles = StyleSheet.create({
     container: {
@@ -21,24 +21,21 @@ function ProfileScreen() {
       width: 150,
     },
     profile_Name: {
-      color: colors.text,
+
       fontSize: 24,
-      fontWeight: "bold",
+      ...fonts.bold,
       marginBottom: 5,
     },
     profile_Email: {
-      color: colors.text,
-      fontSize: 16,
+      ...fonts.regular,
       marginBottom: 10,
     },
     profile_Phone: {
-      color: colors.text,
-      fontSize: 16,
+      ...fonts.regular,
       marginBottom: 10,
     },
     profile_Position: {
-      color: colors.text,
-      fontSize: 16,
+      ...fonts.regular,
       marginBottom: 10,
     },
   });

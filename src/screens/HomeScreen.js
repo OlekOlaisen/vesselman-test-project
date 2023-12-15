@@ -18,8 +18,7 @@ function HomeScreen() {
     >
       <Text
         style={{
-          color: colors.text,
-          fontFamily: fonts.regular.fontFamily,
+          ...fonts.regular,
         }}
       >
         Home

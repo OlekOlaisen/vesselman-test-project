@@ -6,7 +6,7 @@ import { Button } from "react-native";
 
 function SettingsScreen() {
   const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext);
-  const { colors } = useTheme();
+  const { colors, fonts } = useTheme();
   const styles = StyleSheet.create({
     /*... existing styles ...*/
   });
@@ -26,7 +26,7 @@ function SettingsScreen() {
       }}
     >
       <View style={styles.buttonContainer}>
-        <Text style={{ color: colors.text }}>
+        <Text style={{ ...fonts.regular }}>
           {isDarkTheme ? "Dark Theme" : "Light Theme"}
         </Text>
         <Switch
@@ -40,17 +40,17 @@ function SettingsScreen() {
           value={isDarkTheme}
         />
       </View>
-      
+
       <View style={styles.section}>{/* Add profile settings here */}</View>
-      
+
       <View style={styles.section}>
-        <Text style={{ color: colors.text }}>Notifications</Text>
+        <Text style={{ ...fonts.regular }}>Notifications</Text>
         <Switch
           trackColor={{ false: colors.primaryContainer, true: colors.primary }}
           thumbColor={isDarkTheme ? colors.secondary : colors.primary}
         />
       </View>
-      
+
       <Button title="Log out" onPress={handleLogout} color={colors.primary} />
     </View>
   );
