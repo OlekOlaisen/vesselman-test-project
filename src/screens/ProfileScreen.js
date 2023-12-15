@@ -11,27 +11,37 @@ function ProfileScreen() {
 
   const styles = StyleSheet.create({
     container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: colors.background,
-    padding: 20,
-  },
- profileImage: {
-  width: 150,
- },
-  profileName: {
-    color: colors.text,
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 5,
-  },
-  profileEmail: {
-    color: colors.text,
-    fontSize: 16,
-    marginBottom: 10,
-  },
-});
+      flex: 1,
+      alignItems: "center",
+      justifyContent: "center",
+      backgroundColor: colors.background,
+      padding: 20,
+    },
+    profile_Image: {
+      width: 150,
+    },
+    profile_Name: {
+      color: colors.text,
+      fontSize: 24,
+      fontWeight: "bold",
+      marginBottom: 5,
+    },
+    profile_Email: {
+      color: colors.text,
+      fontSize: 16,
+      marginBottom: 10,
+    },
+    profile_Phone: {
+      color: colors.text,
+      fontSize: 16,
+      marginBottom: 10,
+    },
+    profile_Position: {
+      color: colors.text,
+      fontSize: 16,
+      marginBottom: 10,
+    },
+  });
 
 
 
@@ -45,10 +55,11 @@ function ProfileScreen() {
         stroke={colors.primary}
         fill={colors.primary}
         strokeWidth={1}
-        
       />
-      <Text style={styles.profileName}>Name: John Doe</Text>
-      <Text style={styles.profileEmail}>Email: john.doe@example.com</Text>
+      <Text style={styles.profile_Name}>John Doe</Text>
+      <Text style={styles.profile_Position}>Ship Captain</Text>
+      <Text style={styles.profile_Email}>john.doe@example.com</Text>
+      <Text style={styles.profile_Phone}>+47 919 99 999</Text>
     </View>
   );
 }

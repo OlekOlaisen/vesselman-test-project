@@ -42,6 +42,25 @@ const lightTheme = {
     onSurfaceDisabled: "rgba(29, 27, 30, 0.38)",
     backdrop: "rgba(51, 47, 55, 0.4)",
   },
+  fonts: {
+    ...MD3LightTheme.fonts,
+    regular: {
+      fontFamily: "Roboto",
+      fontWeight: "normal",
+    },
+    medium: {
+      fontFamily: "Roboto",
+      fontWeight: "500",
+    },
+    light: {
+      fontFamily: "Roboto",
+      fontWeight: "300",
+    },
+    thin: {
+      fontFamily: "Roboto",
+      fontWeight: "100",
+    },
+  },
 };
 
 const darkTheme = {
@@ -66,7 +85,7 @@ const darkTheme = {
     errorContainer: "#B3261E", // A darker shade for error container
     onErrorContainer: "#FADAD7", // A lighter shade for text on the error container
     background: "#273142", // A typical dark theme background color
-    onBackground: "#374153", 
+    onBackground: "#374153",
     surface: "#121212", // Same as the background for cohesiveness
     onSurface: "#E5E5E5", // Light text on surface
     surfaceVariant: "#2c2c2c", // A slight variation for the surface variant
@@ -83,6 +102,25 @@ const darkTheme = {
     surfaceDisabled: "rgba(219, 147, 44, 0.12)", // Using the primary color with reduced opacity
     onSurfaceDisabled: "rgba(219, 147, 44, 0.38)", // Using the primary color with higher opacity for text/icons
     backdrop: "rgba(28, 27, 31, 0.8)",
+  },
+  fonts: {
+    ...MD3LightTheme.fonts,
+    regular: {
+      fontFamily: "Roboto",
+      fontWeight: "normal",
+    },
+    medium: {
+      fontFamily: "Roboto",
+      fontWeight: "500",
+    },
+    light: {
+      fontFamily: "Roboto",
+      fontWeight: "300",
+    },
+    thin: {
+      fontFamily: "Roboto",
+      fontWeight: "100",
+    },
   },
 };
 

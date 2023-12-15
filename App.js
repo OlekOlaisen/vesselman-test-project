@@ -11,6 +11,8 @@ function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const theme = isDarkTheme ? darkTheme : lightTheme;
 
+  
+
   return (
     <PaperProvider theme={theme}>
       <ThemeContext.Provider value={{ isDarkTheme, setIsDarkTheme }}>
