@@ -47,9 +47,6 @@ function ProfileScreen() {
         strokeWidth={1}
         
       />
-
-      
-
       <Text style={styles.profileName}>Name: John Doe</Text>
       <Text style={styles.profileEmail}>Email: john.doe@example.com</Text>
     </View>

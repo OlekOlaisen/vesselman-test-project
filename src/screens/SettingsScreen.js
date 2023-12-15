@@ -51,7 +51,7 @@ function SettingsScreen() {
         />
       </View>
       
-      <Button title="Logout" onPress={handleLogout} color={colors.primary} />
+      <Button title="Log out" onPress={handleLogout} color={colors.primary} />
     </View>
   );
 }

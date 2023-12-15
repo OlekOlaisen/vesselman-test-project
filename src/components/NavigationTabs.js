@@ -35,6 +35,8 @@ export default function NavigationTabs() {
         headerShown: true,
         headerStyle: { backgroundColor: colors.onBackground, elevation: 0 },
         headerTintColor: colors.primary,
+        headerTitleAlign: "left",
+        
       }}
       tabBar={({ navigation, state, descriptors, insets }) => (
         <BottomNavigation.Bar
