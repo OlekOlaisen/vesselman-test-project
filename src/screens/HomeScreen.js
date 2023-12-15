@@ -5,7 +5,7 @@ import { ThemeContext } from "../context/themeContext";
 
 function HomeScreen() {
   const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext);
-  const { colors } = useTheme();
+  const { colors, fonts } = useTheme();
 
   return (
     <View
@@ -16,7 +16,14 @@ function HomeScreen() {
         backgroundColor: colors.background,
       }}
     >
-      <Text style={{ color: colors.text }}>Home</Text>
+      <Text
+        style={{
+          color: colors.text,
+          fontFamily: fonts.regular.fontFamily,
+        }}
+      >
+        Home
+      </Text>
     </View>
   );
 }
