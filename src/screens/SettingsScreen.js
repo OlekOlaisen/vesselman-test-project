@@ -7,13 +7,10 @@ import { Button } from "react-native";
 function SettingsScreen() {
   const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext);
   const { colors, fonts } = useTheme();
-  const styles = StyleSheet.create({
-    /*... existing styles ...*/
-  });
 
-  const handleLogout = () => {
-    // Handle logout logic here
-  };
+  const styles = StyleSheet.create({});
+
+  const handleLogout = () => {};
 
   return (
     <View
@@ -41,7 +38,7 @@ function SettingsScreen() {
         />
       </View>
 
-      <View style={styles.section}>{/* Add profile settings here */}</View>
+      <View style={styles.section}></View>
 
       <View style={styles.section}>
         <Text style={{ ...fonts.regular }}>Notifications</Text>
