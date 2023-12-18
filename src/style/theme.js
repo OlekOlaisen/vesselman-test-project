@@ -24,8 +24,6 @@ export async function loadFonts() {
   });
 }
 
-
-
 /* General colors for light theme */
 const themeColorLight = {
   ...MD3LightTheme.colors,
@@ -53,13 +51,11 @@ const themeColorLight = {
   surfaceVariant: "#e6e6e6", // A lighter shade for surface variant
   onSurfaceVariant: "#444444", // Natural dark color for text on surface variant
   outline: "#6f6f6f", // A muted color for outlines
-  // ... other colors and properties
   elevation: {
     level0: "transparent",
     level1: "#f5f5f5", // Elevation for level 1
     level2: "#e0e0e0", // Elevation for level 2
     level3: "#cccccc", // Elevation for level 3
-
     level4: "#bdbdbd", // Elevation for level 4, slightly darker
     level5: "#acacac", // Elevation for level 5, even darker
   },
@@ -142,6 +138,7 @@ const themeFontsDark = {
     fontFamily: "Roboto-Bold",
     fontWeight: "bold",
     color: themeColorDark.text,
+    fontSize: 24,
   },
   regular: {
     fontFamily: "Roboto-Regular",

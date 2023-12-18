@@ -21,8 +21,6 @@ function ProfileScreen() {
       width: 150,
     },
     profile_Name: {
-
-      fontSize: 24,
       ...fonts.bold,
       marginBottom: 5,
     },
