@@ -39,8 +39,6 @@ function ProfileScreen() {
   });
 
 
-
-
   return (
     <View style={styles.container}>
       <ProfileIcon
