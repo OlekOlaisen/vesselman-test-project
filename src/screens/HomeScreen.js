@@ -49,7 +49,56 @@ function HomeScreen({navigation}) {
        style={styles.button}
        onPress={() => navigation.navigate("Profile")}
      >
-       <Text style={styles.buttonText}>Button</Text>
+       <Text style={styles.buttonText}>Task Manager</Text>
+     </TouchableOpacity>
+
+     <TouchableOpacity
+       style={styles.button}
+       onPress={() => navigation.navigate("Profile")}
+     >
+       <Text style={styles.buttonText}>Inspection</Text>
+     </TouchableOpacity>
+
+     <TouchableOpacity
+       style={styles.button}
+       onPress={() => navigation.navigate("Profile")}
+     >
+       <Text style={styles.buttonText}>Vessels</Text>
+     </TouchableOpacity>
+
+     <TouchableOpacity
+       style={styles.button}
+       onPress={() => navigation.navigate("Profile")}
+     >
+       <Text style={styles.buttonText}>Procedures</Text>
+     </TouchableOpacity>
+
+     <TouchableOpacity
+       style={styles.button}
+       onPress={() => navigation.navigate("Profile")}
+     >
+       <Text style={styles.buttonText}>Issues</Text>
+     </TouchableOpacity>
+
+     <TouchableOpacity
+       style={styles.button}
+       onPress={() => navigation.navigate("Profile")}
+     >
+       <Text style={styles.buttonText}>Project</Text>
+     </TouchableOpacity>
+
+     <TouchableOpacity
+       style={styles.button}
+       onPress={() => navigation.navigate("Profile")}
+     >
+       <Text style={styles.buttonText}>Maintenance</Text>
+     </TouchableOpacity>
+
+     <TouchableOpacity
+       style={styles.button}
+       onPress={() => navigation.navigate("Profile")}
+     >
+       <Text style={styles.buttonText}>Risk</Text>
      </TouchableOpacity>
    </View>
  );
