@@ -1,14 +1,31 @@
 import React, { useContext } from "react";
 import { useTheme } from "react-native-paper";
-import { View, Text, Switch, StyleSheet } from "react-native";
+import { View, Text, Switch, StyleSheet, TouchableOpacity } from "react-native";
 import { ThemeContext } from "../context/themeContext";
-import { Button } from "react-native";
+
 
 function SettingsScreen() {
   const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext);
   const { colors, fonts } = useTheme();
 
-  const styles = StyleSheet.create({});
+  const styles = StyleSheet.create({
+    buttonContainer: {
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "space-between",
+    },
+    button: {
+      backgroundColor: colors.primary,
+      padding: 10,
+      marginBottom: 5,
+      width: 150,
+      margin: 10,
+      borderRadius: 10,
+    },
+    buttonText: {
+      ...fonts.button,
+    },
+  });
 
   const handleLogout = () => {};
 
@@ -18,7 +35,7 @@ function SettingsScreen() {
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        gap: 20,
+        gap: 10,
         backgroundColor: colors.background,
       }}
     >
@@ -40,15 +57,11 @@ function SettingsScreen() {
 
       <View style={styles.section}></View>
 
-      <View style={styles.section}>
-        <Text style={{ ...fonts.regular }}>Notifications</Text>
-        <Switch
-          trackColor={{ false: colors.primaryContainer, true: colors.primary }}
-          thumbColor={isDarkTheme ? colors.secondary : colors.primary}
-        />
-      </View>
+      <View style={styles.section}></View>
 
-      <Button title="Log out" onPress={handleLogout} color={colors.primary} />
+      <TouchableOpacity style={styles.button} onPress={handleLogout}>
+        <Text style={styles.buttonText}>Log Out</Text>
+      </TouchableOpacity>
     </View>
   );
 }

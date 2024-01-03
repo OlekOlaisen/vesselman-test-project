@@ -51,6 +51,7 @@ const themeColorLight = {
   surfaceVariant: "#e6e6e6", // A lighter shade for surface variant
   onSurfaceVariant: "#444444", // Natural dark color for text on surface variant
   outline: "#6f6f6f", // A muted color for outlines
+  button: "#E5E5E5",
   elevation: {
     level0: "transparent",
     level1: "#f5f5f5", // Elevation for level 1
@@ -82,12 +83,21 @@ const themeFontsLight = {
   medium: {
     fontFamily: "Roboto-Medium",
     fontWeight: "500",
+    fontSize: 16,
     color: themeColorLight.text,
   },
   light: {
     fontFamily: "Roboto-Light",
     fontWeight: "300",
+    fontSize: 16,
     color: themeColorLight.text,
+  },
+  button: {
+    fontFamily: "Roboto-Regular",
+    fontWeight: "bold",
+    fontSize: 16,
+    color: themeColorLight.button,
+    textAlign: 'center'
   },
 };
 
@@ -118,6 +128,7 @@ const themeColorDark = {
   surfaceVariant: "#2c2c2c", // A slight variation for the surface variant
   onSurfaceVariant: "#E5E5E5", // Light text on the surface variant
   outline: "#93876C", // A muted color for outlines, derived from the primary color
+  button: "#E5E5E5", // A button color that contrasts with the background
   elevation: {
     level0: "transparent",
     level1: "#1d1d1d",
@@ -143,17 +154,27 @@ const themeFontsDark = {
   regular: {
     fontFamily: "Roboto-Regular",
     fontWeight: "normal",
+    fontSize: 16,
     color: themeColorDark.text,
   },
   medium: {
     fontFamily: "Roboto-Medium",
     fontWeight: "500",
+    fontSize: 16,
     color: themeColorDark.text,
   },
   light: {
     fontFamily: "Roboto-Light",
     fontWeight: "300",
+    fontSize: 16,
     color: themeColorDark.text,
+  },
+  button: {
+    fontFamily: "Roboto-Regular",
+    fontWeight: "bold",
+    fontSize: 16,
+    color: themeColorDark.button,
+    textAlign: "center",
   },
 };
 
